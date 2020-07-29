@@ -162,8 +162,15 @@
                         <viewLayoutGuide key="safeArea" id="OcC-Ou-Sc7"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="57c-3q-IOC">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="thh-g0-gXL"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="thh-g0-gXL">
+                            <connections>
+                                <action selector="addPercentage:" destination="KJP-UK-rVR" id="ZFq-YF-EXs"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="thh-g0-gXL" id="Ghc-6g-ZyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3tg-XV-4SP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
